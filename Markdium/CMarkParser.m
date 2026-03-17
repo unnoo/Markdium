@@ -44,19 +44,46 @@ extern cmark_syntax_extension *create_tasklist_extension(void);
 extern cmark_syntax_extension *create_table_extension(void);
 
 void cmarkEnableGFM(cmark_parser *parser, int extensions) {
-    if (extensions & MDExtensionTagFilter) cmark_parser_attach_syntax_extension(parser, create_tagfilter_extension());
-    if (extensions & MDExtensionAutolink) cmark_parser_attach_syntax_extension(parser, create_autolink_extension());
-    if (extensions & MDExtensionStrikethrough) cmark_parser_attach_syntax_extension(parser, create_strikethrough_extension());
-    if (extensions & MDExtensionTasklist) cmark_parser_attach_syntax_extension(parser, create_tasklist_extension());
-    if (extensions & MDExtensionTable) cmark_parser_attach_syntax_extension(parser, create_table_extension());
+    if (extensions & MDExtensionTagFilter) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            cmark_parser_attach_syntax_extension(parser, create_tagfilter_extension());
+        });
+    }
+
+    if (extensions & MDExtensionAutolink) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            cmark_parser_attach_syntax_extension(parser, create_autolink_extension());
+        });
+    }
+
+    if (extensions & MDExtensionStrikethrough) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            cmark_parser_attach_syntax_extension(parser, create_strikethrough_extension());
+        });
+    }
+
+    if (extensions & MDExtensionTasklist) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            cmark_parser_attach_syntax_extension(parser, create_tasklist_extension());
+        });
+    }
+
+    if (extensions & MDExtensionTable) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            cmark_parser_attach_syntax_extension(parser, create_table_extension());
+        });
+    }
 }
 
 cmark_node *_Nullable cmarkParseString(NSString *string, int options, int extensions) {
     if (!string) {
         return NULL;
     }
-
-    cmarkGFMCoreExtensionsEnsureRegistered();
 
     cmark_parser *parser = cmark_parser_new(options);
     if (!parser) {
@@ -83,8 +110,6 @@ cmark_node *_Nullable cmarkParsePath(NSString *path, int options, int extensions
     if (fileSize.unsignedLongLongValue == 0) {
         return NULL;
     }
-
-    cmarkGFMCoreExtensionsEnsureRegistered();
 
     cmark_parser *parser = cmark_parser_new(options);
     if (!parser) {
