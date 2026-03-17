@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MarkdiumTypes.h"
-#import "MDNode.h"
+#import <Markdium/MarkdiumTypes.h>
+#import <Markdium/MDNode.h>
 
 @interface Markdium : NSObject
 

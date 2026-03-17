@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MarkdiumTypes.h"
+#import <Markdium/MarkdiumTypes.h>
 
 @interface MDNode : NSObject
 

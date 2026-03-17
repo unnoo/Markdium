@@ -17,7 +17,7 @@ void cmarkGFMCoreExtensionsEnsureRegistered(void) {
     });
 }
 
-NSString *getNodeTypeString(cmark_node *node) {
+NSString *_Nullable getNodeTypeString(cmark_node *node) {
     NSString *output = nil;
     const char *ptr = cmark_node_get_type_string(node);
     if (ptr) {
@@ -27,7 +27,7 @@ NSString *getNodeTypeString(cmark_node *node) {
     return output;
 }
 
-NSString *getNodeLiteral(cmark_node *node) {
+NSString *_Nullable getNodeLiteral(cmark_node *node) {
     NSString *output = nil;
     const char *ptr = cmark_node_get_literal(node);
     if (ptr) {
@@ -51,7 +51,7 @@ void cmarkEnableGFM(cmark_parser *parser, int extensions) {
     if (extensions & MDExtensionTable) cmark_parser_attach_syntax_extension(parser, create_table_extension());
 }
 
-cmark_node *cmarkParseString(NSString *string, int options, int extensions) {
+cmark_node *_Nullable cmarkParseString(NSString *string, int options, int extensions) {
     if (!string) {
         return NULL;
     }
@@ -73,7 +73,7 @@ cmark_node *cmarkParseString(NSString *string, int options, int extensions) {
     return node;
 }
 
-cmark_node *cmarkParsePath(NSString *path, int options, int extensions) {
+cmark_node *_Nullable cmarkParsePath(NSString *path, int options, int extensions) {
     if (!path || ![NSFileManager.defaultManager fileExistsAtPath:path]) {
         return NULL;
     }
