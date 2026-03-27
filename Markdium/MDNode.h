@@ -20,6 +20,8 @@
 @property(nonatomic, readonly) NSInteger endLine;
 @property(nonatomic, readonly) NSInteger endColumn;
 
+@property(nonnull, nonatomic, copy) NSString *content;
+
 + (nullable instancetype)new NS_UNAVAILABLE;
 - (nullable instancetype)init NS_UNAVAILABLE;
 

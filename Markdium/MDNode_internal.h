@@ -20,12 +20,10 @@
 @property(nonatomic, assign) MDNodeType type;
 @property(nonnull, nonatomic, copy) NSString *typeString;
 
-@property(nullable, nonatomic, copy) NSString *content;
-
 @property(nonatomic, assign) NSInteger startLine;
-@property(nonatomic, assign) NSInteger startColumn;
-
 @property(nonatomic, assign) NSInteger endLine;
+
+@property(nonatomic, assign) NSInteger startColumn;
 @property(nonatomic, assign) NSInteger endColumn;
 
 @property(nullable, nonatomic, strong) MDNode *prev;
