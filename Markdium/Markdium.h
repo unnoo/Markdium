@@ -29,7 +29,7 @@
 
 @interface Markdium (parse)
 
-- (nonnull MDNode *)parseAsAST;
+- (nonnull NSArray<MDNode *> *)parseAsAST;
 
 @end
 
