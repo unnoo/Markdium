@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Markdium/cmark-gfm_export.h>
+#import <Markdium/cmark-gfm_version.h>
+#import <Markdium/cmark-gfm.h>
+#import <Markdium/cmark-gfm-extension_api.h>
+#import <Markdium/cmark-gfm-core-extensions.h>
 #import <Markdium/MarkdiumTypes.h>
 #import <Markdium/MDNode.h>
 

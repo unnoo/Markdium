@@ -17,13 +17,13 @@
 		15640120237E9C6100F8CD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1564011F237E9C6100F8CD81 /* main.m */; };
 		15640127237E9C8100F8CD81 /* Markdium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FC6511237E4EF700B5DFB0 /* Markdium.framework */; };
 		15FC6516237E4EF700B5DFB0 /* Markdium.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6514237E4EF700B5DFB0 /* Markdium.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15FC65B0237E526800B5DFB0 /* cmark-gfm_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65AD237E526800B5DFB0 /* cmark-gfm_version.h */; };
+		15FC65B0237E526800B5DFB0 /* cmark-gfm_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65AD237E526800B5DFB0 /* cmark-gfm_version.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15FC65B1237E526800B5DFB0 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65AE237E526800B5DFB0 /* config.h */; };
-		15FC65B2237E526800B5DFB0 /* cmark-gfm_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65AF237E526800B5DFB0 /* cmark-gfm_export.h */; };
+		15FC65B2237E526800B5DFB0 /* cmark-gfm_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65AF237E526800B5DFB0 /* cmark-gfm_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15FC65B4237E528D00B5DFB0 /* cmark-gfm-extensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65B3237E528D00B5DFB0 /* cmark-gfm-extensions_export.h */; };
 		15FC65B6237E532300B5DFB0 /* Markdium.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FC65B5237E532300B5DFB0 /* Markdium.m */; };
 		15FC6783237E5DA000B5DFB0 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6609237E5D9F00B5DFB0 /* strikethrough.c */; };
-		15FC6784237E5DA000B5DFB0 /* cmark-gfm-core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC660A237E5D9F00B5DFB0 /* cmark-gfm-core-extensions.h */; };
+		15FC6784237E5DA000B5DFB0 /* cmark-gfm-core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC660A237E5D9F00B5DFB0 /* cmark-gfm-core-extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15FC6785237E5DA000B5DFB0 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC660B237E5D9F00B5DFB0 /* autolink.c */; };
 		15FC6786237E5DA000B5DFB0 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC660C237E5D9F00B5DFB0 /* table.c */; };
 		15FC6788237E5DA000B5DFB0 /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC660E237E5D9F00B5DFB0 /* tasklist.h */; };
@@ -46,7 +46,7 @@
 		15FC6869237E5DA000B5DFB0 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6711237E5DA000B5DFB0 /* inlines.c */; };
 		15FC686B237E5DA000B5DFB0 /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6713237E5DA000B5DFB0 /* plugin.h */; };
 		15FC686C237E5DA000B5DFB0 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6714237E5DA000B5DFB0 /* latex.c */; };
-		15FC686D237E5DA000B5DFB0 /* cmark-gfm-extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6715237E5DA000B5DFB0 /* cmark-gfm-extension_api.h */; };
+		15FC686D237E5DA000B5DFB0 /* cmark-gfm-extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6715237E5DA000B5DFB0 /* cmark-gfm-extension_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15FC686E237E5DA000B5DFB0 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6716237E5DA000B5DFB0 /* houdini_href_e.c */; };
 		15FC686F237E5DA000B5DFB0 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6717237E5DA000B5DFB0 /* map.h */; };
 		15FC6870237E5DA000B5DFB0 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6718237E5DA000B5DFB0 /* chunk.h */; };
@@ -73,7 +73,7 @@
 		15FC6889237E5DA000B5DFB0 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6731237E5DA000B5DFB0 /* plugin.c */; };
 		15FC688A237E5DA000B5DFB0 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6732237E5DA000B5DFB0 /* inlines.h */; };
 		15FC688C237E5DA000B5DFB0 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6734237E5DA000B5DFB0 /* scanners.c */; };
-		15FC688D237E5DA000B5DFB0 /* cmark-gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6735237E5DA000B5DFB0 /* cmark-gfm.h */; };
+		15FC688D237E5DA000B5DFB0 /* cmark-gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6735237E5DA000B5DFB0 /* cmark-gfm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15FC688E237E5DA000B5DFB0 /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = 15FC6736237E5DA000B5DFB0 /* footnotes.c */; };
 		15FC688F237E5DA000B5DFB0 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6737237E5DA000B5DFB0 /* houdini.h */; };
 		15FC6890237E5DA000B5DFB0 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6738237E5DA000B5DFB0 /* iterator.h */; };
@@ -357,6 +357,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FC65B0237E526800B5DFB0 /* cmark-gfm_version.h in Headers */,
+				15FC688D237E5DA000B5DFB0 /* cmark-gfm.h in Headers */,
+				15FC6784237E5DA000B5DFB0 /* cmark-gfm-core-extensions.h in Headers */,
+				15FC65B2237E526800B5DFB0 /* cmark-gfm_export.h in Headers */,
+				15FC686D237E5DA000B5DFB0 /* cmark-gfm-extension_api.h in Headers */,
 				15478C66237F8A990097C349 /* MarkdiumTypes.h in Headers */,
 				15FC6868237E5DA000B5DFB0 /* html.h in Headers */,
 				153035E3237FD19100DB9E6E /* MDNode.h in Headers */,
@@ -365,14 +370,12 @@
 				15FC6874237E5DA000B5DFB0 /* footnotes.h in Headers */,
 				15FC688F237E5DA000B5DFB0 /* houdini.h in Headers */,
 				15FC6791237E5DA000B5DFB0 /* ext_scanners.h in Headers */,
-				15FC686D237E5DA000B5DFB0 /* cmark-gfm-extension_api.h in Headers */,
 				15FC6893237E5DA000B5DFB0 /* utf8.h in Headers */,
 				15FC6870237E5DA000B5DFB0 /* chunk.h in Headers */,
 				15FC687A237E5DA000B5DFB0 /* node.h in Headers */,
 				15FC678C237E5DA000B5DFB0 /* strikethrough.h in Headers */,
 				15FC6882237E5DA000B5DFB0 /* buffer.h in Headers */,
 				15FC686B237E5DA000B5DFB0 /* plugin.h in Headers */,
-				15FC65B2237E526800B5DFB0 /* cmark-gfm_export.h in Headers */,
 				15FC6790237E5DA000B5DFB0 /* tagfilter.h in Headers */,
 				15FC6885237E5DA000B5DFB0 /* syntax_extension.h in Headers */,
 				15FC6896237E5DA000B5DFB0 /* render.h in Headers */,
@@ -380,12 +383,9 @@
 				15FC689A237E684E00B5DFB0 /* Markdium-Prefix.pch in Headers */,
 				15FC688A237E5DA000B5DFB0 /* inlines.h in Headers */,
 				15478C63237F890A0097C349 /* CMarkParser.h in Headers */,
-				15FC6784237E5DA000B5DFB0 /* cmark-gfm-core-extensions.h in Headers */,
 				15FC6516237E4EF700B5DFB0 /* Markdium.h in Headers */,
 				15FC678F237E5DA000B5DFB0 /* table.h in Headers */,
-				15FC688D237E5DA000B5DFB0 /* cmark-gfm.h in Headers */,
 				15FC65B4237E528D00B5DFB0 /* cmark-gfm-extensions_export.h in Headers */,
-				15FC65B0237E526800B5DFB0 /* cmark-gfm_version.h in Headers */,
 				153035E6237FD45200DB9E6E /* MDNode_internal.h in Headers */,
 				15FC6895237E5DA000B5DFB0 /* references.h in Headers */,
 				15FC6878237E5DA000B5DFB0 /* scanners.h in Headers */,
