@@ -9,13 +9,7 @@
 #import "CMarkParser.h"
 #import "MarkdiumTypes.h"
 #import "MDNode_internal.h"
-
-void cmarkGFMCoreExtensionsEnsureRegistered(void) {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        cmark_gfm_core_extensions_ensure_registered();
-    });
-}
+#import "cmark-gfm.h"
 
 NSString *_Nullable getNodeTypeString(cmark_node *node) {
     NSString *output = nil;
@@ -37,46 +31,32 @@ NSString *_Nullable getNodeLiteral(cmark_node *node) {
     return output;
 }
 
-extern cmark_syntax_extension *create_tagfilter_extension(void);
-extern cmark_syntax_extension *create_autolink_extension(void);
-extern cmark_syntax_extension *create_strikethrough_extension(void);
-extern cmark_syntax_extension *create_tasklist_extension(void);
-extern cmark_syntax_extension *create_table_extension(void);
+NS_INLINE void cmarkAttachSyntaxExtension(cmark_parser *parser, const char *extName) {
+    cmark_syntax_extension *ext = cmark_find_syntax_extension(extName);
+    if (ext) {
+        cmark_parser_attach_syntax_extension(parser, ext);
+    }
+}
 
 void cmarkEnableGFM(cmark_parser *parser, int extensions) {
     if (extensions & MDExtensionTagFilter) {
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            cmark_parser_attach_syntax_extension(parser, create_tagfilter_extension());
-        });
+        cmarkAttachSyntaxExtension(parser, "tagfilter");
     }
 
     if (extensions & MDExtensionAutolink) {
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            cmark_parser_attach_syntax_extension(parser, create_autolink_extension());
-        });
+        cmarkAttachSyntaxExtension(parser, "autolink");
     }
 
     if (extensions & MDExtensionStrikethrough) {
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            cmark_parser_attach_syntax_extension(parser, create_strikethrough_extension());
-        });
+        cmarkAttachSyntaxExtension(parser, "strikethrough");
     }
 
     if (extensions & MDExtensionTasklist) {
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            cmark_parser_attach_syntax_extension(parser, create_tasklist_extension());
-        });
+        cmarkAttachSyntaxExtension(parser, "tasklist");
     }
 
     if (extensions & MDExtensionTable) {
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            cmark_parser_attach_syntax_extension(parser, create_table_extension());
-        });
+        cmarkAttachSyntaxExtension(parser, "table");
     }
 }
 
@@ -84,6 +64,8 @@ cmark_node *_Nullable cmarkParseString(NSString *string, int options, int extens
     if (!string) {
         return NULL;
     }
+
+    cmark_gfm_core_extensions_ensure_registered();
 
     cmark_parser *parser = cmark_parser_new(options);
     if (!parser) {
@@ -110,6 +92,8 @@ cmark_node *_Nullable cmarkParsePath(NSString *path, int options, int extensions
     if (fileSize.unsignedLongLongValue == 0) {
         return NULL;
     }
+
+    cmark_gfm_core_extensions_ensure_registered();
 
     cmark_parser *parser = cmark_parser_new(options);
     if (!parser) {

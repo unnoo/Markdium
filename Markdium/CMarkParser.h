@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "MDNode.h"
 
-void cmarkGFMCoreExtensionsEnsureRegistered(void);
-
 NSString *_Nullable getNodeTypeString(cmark_node *_Nonnull node);
 
 NSString *_Nullable getNodeLiteral(cmark_node *_Nonnull node);
