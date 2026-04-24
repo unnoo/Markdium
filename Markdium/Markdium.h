@@ -13,7 +13,6 @@
 #import <Markdium/buffer.h>
 #import <Markdium/node.h>
 #import <Markdium/cmark_ctype.h>
-#import <Markdium/cmark-gfm_export.h>
 #import <Markdium/cmark-gfm_version.h>
 #import <Markdium/cmark-gfm.h>
 #import <Markdium/cmark-gfm-extension_api.h>
