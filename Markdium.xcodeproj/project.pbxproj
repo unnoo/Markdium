@@ -52,7 +52,7 @@
 		156A62AF2F9B396A000CA06D /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 156A62432F9B396A000CA06D /* core-extensions.c */; };
 		156A62B62F9B396A000CA06D /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A62592F9B396A000CA06D /* houdini.h */; };
 		156A62B72F9B396A000CA06D /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A62662F9B396A000CA06D /* scanners.h */; };
-		156A62B82F9B396A000CA06D /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A62572F9B396A000CA06D /* export.h */; };
+		156A62B82F9B396A000CA06D /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A62572F9B396A000CA06D /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		156A62B92F9B396A000CA06D /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A62502F9B396A000CA06D /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		156A62BA2F9B396A000CA06D /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A625A2F9B396A000CA06D /* html.h */; };
 		156A62BB2F9B396A000CA06D /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A624D2F9B396A000CA06D /* tasklist.h */; };
@@ -376,6 +376,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156A62B82F9B396A000CA06D /* export.h in Headers */,
 				156A62CF2F9B396A000CA06D /* cmark_ctype.h in Headers */,
 				15FC65B1237E526800B5DFB0 /* config.h in Headers */,
 				156A62BE2F9B396A000CA06D /* cmark-gfm_version.h in Headers */,
@@ -388,7 +389,6 @@
 				156A62C22F9B396A000CA06D /* node.h in Headers */,
 				156A62B62F9B396A000CA06D /* houdini.h in Headers */,
 				156A62B72F9B396A000CA06D /* scanners.h in Headers */,
-				156A62B82F9B396A000CA06D /* export.h in Headers */,
 				156A62BA2F9B396A000CA06D /* html.h in Headers */,
 				156A62BB2F9B396A000CA06D /* tasklist.h in Headers */,
 				156A62BC2F9B396A000CA06D /* iterator.h in Headers */,
