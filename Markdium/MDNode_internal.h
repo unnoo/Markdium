@@ -11,9 +11,7 @@
 
 #import "MDNode.h"
 
-@interface MDNode () {
-    NSMutableArray<MDNode *> *_childNodes;
-}
+@interface MDNode ()
 
 @property(nonatomic, assign) NSInteger lvl;
 
@@ -26,11 +24,9 @@
 @property(nonatomic, assign) NSInteger startColumn;
 @property(nonatomic, assign) NSInteger endColumn;
 
-@property(nullable, nonatomic, strong) MDNode *prev;
-@property(nullable, nonatomic, strong) MDNode *next;
-
-@property(nullable, nonatomic, strong) MDNode *parent;
-@property(nullable, nonatomic, strong) NSArray<MDNode *> *childNodes;
+@property(nullable, nonatomic) MDNode *prev;
+@property(nullable, nonatomic) MDNode *next;
+@property(nullable, nonatomic) MDNode *parent;
 
 + (nonnull instancetype)nodeWithCMarkNode:(cmark_node * _Nonnull)node;
 - (nonnull instancetype)initWithNode:(cmark_node * _Nonnull)node;

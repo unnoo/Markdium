@@ -52,7 +52,6 @@ static Class classForNodeType(MDNodeType type) {
     }
 
     if (self = [super init]) {
-        _childNodes = NSMutableArray.array;
         _type = (MDNodeType)cmark_node_get_type(node);
         _typeString = [NSString stringWithUTF8String:cmark_node_get_type_string(node)];
         _startLine = cmark_node_get_start_line(node);
@@ -76,7 +75,6 @@ static Class classForNodeType(MDNodeType type) {
 - (void)addChild:(MDNode *)node {
     if (node) {
         node.parent = self;
-        [_childNodes addObject:node];
     }
 }
 

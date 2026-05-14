@@ -7,6 +7,8 @@
 //
 
 #import "Markdium.h"
+#import <string>
+#import <sstream>
 #import "CMarkParser.h"
 #import "MDNode_internal.h"
 
@@ -75,6 +77,23 @@
     }
 
     return self;
+}
+
+@end
+
+@implementation Markdium (split)
+
++ (nonnull NSArray<NSString *> *)splitByLines:(nonnull NSString *)markdown {
+    NSMutableArray<NSString *> *lines = [NSMutableArray array];
+    std::string source(markdown.UTF8String);
+    std::istringstream iss(source);
+
+    std::string line;
+    while(std::getline(iss, line)) {
+        [lines addObject:[NSString stringWithUTF8String:line.c_str()]];
+    }
+
+    return [lines copy];
 }
 
 @end

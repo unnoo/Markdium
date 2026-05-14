@@ -41,6 +41,13 @@ extern cmark_node_type CMARK_NODE_TABLE, CMARK_NODE_TABLE_ROW,
 
 @end
 
+@interface Markdium (split)
+
+/// 使用 C++ 的字符操作方式按换行符分割字符串，逻辑保持和 cmark 一致
++ (nonnull NSArray<NSString *> *)splitByLines:(nonnull NSString *)markdown;
+
+@end
+
 @interface Markdium (parse)
 
 - (nonnull NSArray<MDNode *> *)parseAsAST;

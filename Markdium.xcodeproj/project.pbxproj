@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		153035E3237FD19100DB9E6E /* MDNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 153035E1237FD19100DB9E6E /* MDNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		153035E4237FD19100DB9E6E /* MDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 153035E2237FD19100DB9E6E /* MDNode.m */; };
+		153035E4237FD19100DB9E6E /* MDNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 153035E2237FD19100DB9E6E /* MDNode.mm */; };
 		153035E6237FD45200DB9E6E /* MDNode_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 153035E5237FD45200DB9E6E /* MDNode_internal.h */; };
 		15478C63237F890A0097C349 /* CMarkParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 15478C61237F890A0097C349 /* CMarkParser.h */; };
-		15478C64237F890A0097C349 /* CMarkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15478C62237F890A0097C349 /* CMarkParser.m */; };
+		15478C64237F890A0097C349 /* CMarkParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15478C62237F890A0097C349 /* CMarkParser.mm */; };
 		15478C66237F8A990097C349 /* MarkdiumTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 15478C65237F8A990097C349 /* MarkdiumTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15478C68237F8AE40097C349 /* MarkdiumTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 15478C67237F8AE40097C349 /* MarkdiumTypes.m */; };
+		15478C68237F8AE40097C349 /* MarkdiumTypes.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15478C67237F8AE40097C349 /* MarkdiumTypes.mm */; };
 		15640120237E9C6100F8CD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1564011F237E9C6100F8CD81 /* main.m */; };
 		15640127237E9C8100F8CD81 /* Markdium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FC6511237E4EF700B5DFB0 /* Markdium.framework */; };
 		156A628C2F9B396A000CA06D /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = 156A626A2F9B396A000CA06D /* arena.c */; };
@@ -83,7 +83,7 @@
 		156A62D42F9B396A000CA06D /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A62492F9B396A000CA06D /* table.h */; };
 		15FC6516237E4EF700B5DFB0 /* Markdium.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6514237E4EF700B5DFB0 /* Markdium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15FC65B1237E526800B5DFB0 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC65AE237E526800B5DFB0 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15FC65B6237E532300B5DFB0 /* Markdium.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FC65B5237E532300B5DFB0 /* Markdium.m */; };
+		15FC65B6237E532300B5DFB0 /* Markdium.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15FC65B5237E532300B5DFB0 /* Markdium.mm */; };
 		15FC689A237E684E00B5DFB0 /* Markdium-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 15FC6899237E684E00B5DFB0 /* Markdium-Prefix.pch */; };
 /* End PBXBuildFile section */
 
@@ -111,12 +111,12 @@
 
 /* Begin PBXFileReference section */
 		153035E1237FD19100DB9E6E /* MDNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDNode.h; sourceTree = "<group>"; };
-		153035E2237FD19100DB9E6E /* MDNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDNode.m; sourceTree = "<group>"; };
+		153035E2237FD19100DB9E6E /* MDNode.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MDNode.mm; sourceTree = "<group>"; };
 		153035E5237FD45200DB9E6E /* MDNode_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDNode_internal.h; sourceTree = "<group>"; };
 		15478C61237F890A0097C349 /* CMarkParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMarkParser.h; sourceTree = "<group>"; };
-		15478C62237F890A0097C349 /* CMarkParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMarkParser.m; sourceTree = "<group>"; };
+		15478C62237F890A0097C349 /* CMarkParser.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CMarkParser.mm; sourceTree = "<group>"; };
 		15478C65237F8A990097C349 /* MarkdiumTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkdiumTypes.h; sourceTree = "<group>"; };
-		15478C67237F8AE40097C349 /* MarkdiumTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdiumTypes.m; sourceTree = "<group>"; };
+		15478C67237F8AE40097C349 /* MarkdiumTypes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MarkdiumTypes.mm; sourceTree = "<group>"; };
 		1564011D237E9C6100F8CD81 /* cmark-gfm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cmark-gfm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1564011F237E9C6100F8CD81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		156A623D2F9B396A000CA06D /* cmark-gfm-core-extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cmark-gfm-core-extensions.h"; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		15FC6514237E4EF700B5DFB0 /* Markdium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Markdium.h; sourceTree = "<group>"; };
 		15FC6515237E4EF700B5DFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15FC65AE237E526800B5DFB0 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		15FC65B5237E532300B5DFB0 /* Markdium.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Markdium.m; sourceTree = "<group>"; };
+		15FC65B5237E532300B5DFB0 /* Markdium.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Markdium.mm; sourceTree = "<group>"; };
 		15FC6899237E684E00B5DFB0 /* Markdium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Markdium-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -345,14 +345,14 @@
 			children = (
 				15FC65BB237E5D9F00B5DFB0 /* cmark */,
 				15478C65237F8A990097C349 /* MarkdiumTypes.h */,
-				15478C67237F8AE40097C349 /* MarkdiumTypes.m */,
+				15478C67237F8AE40097C349 /* MarkdiumTypes.mm */,
 				15FC6514237E4EF700B5DFB0 /* Markdium.h */,
-				15FC65B5237E532300B5DFB0 /* Markdium.m */,
+				15FC65B5237E532300B5DFB0 /* Markdium.mm */,
 				153035E1237FD19100DB9E6E /* MDNode.h */,
 				153035E5237FD45200DB9E6E /* MDNode_internal.h */,
-				153035E2237FD19100DB9E6E /* MDNode.m */,
+				153035E2237FD19100DB9E6E /* MDNode.mm */,
 				15478C61237F890A0097C349 /* CMarkParser.h */,
-				15478C62237F890A0097C349 /* CMarkParser.m */,
+				15478C62237F890A0097C349 /* CMarkParser.mm */,
 				15FC6899237E684E00B5DFB0 /* Markdium-Prefix.pch */,
 				15FC65AE237E526800B5DFB0 /* config.h */,
 				15FC6515237E4EF700B5DFB0 /* Info.plist */,
@@ -516,10 +516,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15478C68237F8AE40097C349 /* MarkdiumTypes.m in Sources */,
-				15478C64237F890A0097C349 /* CMarkParser.m in Sources */,
-				153035E4237FD19100DB9E6E /* MDNode.m in Sources */,
-				15FC65B6237E532300B5DFB0 /* Markdium.m in Sources */,
+				15478C68237F8AE40097C349 /* MarkdiumTypes.mm in Sources */,
+				15478C64237F890A0097C349 /* CMarkParser.mm in Sources */,
+				153035E4237FD19100DB9E6E /* MDNode.mm in Sources */,
+				15FC65B6237E532300B5DFB0 /* Markdium.mm in Sources */,
 				156A628C2F9B396A000CA06D /* arena.c in Sources */,
 				156A628D2F9B396A000CA06D /* xml.c in Sources */,
 				156A628E2F9B396A000CA06D /* linked_list.c in Sources */,
