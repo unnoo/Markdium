@@ -39,7 +39,7 @@
     if (!string) {
         return nil;
     }
-    
+
     cmark_node *node = cmarkParseString(string, (int)options, (int)extensions);
     if (!node) {
         return nil;
@@ -94,6 +94,37 @@
     }
 
     return [lines copy];
+}
+
+@end
+
+@implementation Markdium (enumeration)
+
++ (void)enumerateNode:(cmark_node *)node withBlock:(void (^NS_NOESCAPE)(cmark_node *))block {
+    if (!node || !block) {
+        return;
+    }
+
+    block(node);
+
+    cmark_node *child = cmark_node_first_child(node);
+    while (cmark_node *current = child) {
+        [self enumerateNode:current withBlock:block];
+        child = cmark_node_next(child);
+    }
+}
+
++ (void)parseMarkdown:(NSString *_Nonnull)markdown extensions:(MDExtensions)extensions nodeHandler:(void (^NS_NOESCAPE _Nullable)(cmark_node *_Nonnull))block {
+    cmark_node *root = cmarkParseString(markdown, (int)(MDOptionHardBreaks | MDOptionUnsafe), (int)extensions);
+    if (!root) {
+        return;
+    }
+
+    if (block) {
+        [self enumerateNode:root withBlock:block];
+    }
+
+    cmark_node_free(root);
 }
 
 @end

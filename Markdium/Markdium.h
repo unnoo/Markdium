@@ -48,6 +48,12 @@ extern cmark_node_type CMARK_NODE_TABLE, CMARK_NODE_TABLE_ROW,
 
 @end
 
+@interface Markdium (enumeration)
+
++ (void)parseMarkdown:(NSString *_Nonnull)markdown extensions:(MDExtensions)extensions nodeHandler:(void (^NS_NOESCAPE _Nullable)(cmark_node *_Nonnull))block;
+
+@end
+
 @interface Markdium (parse)
 
 - (nonnull NSArray<MDNode *> *)parseAsAST;
