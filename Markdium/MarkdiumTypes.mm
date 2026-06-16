@@ -7,6 +7,8 @@
 //
 
 #import "MarkdiumTypes.h"
+#import "table.h"
+#import "strikethrough.h"
 
 const MDOptions MDOptionDefault = CMARK_OPT_DEFAULT;
 const MDOptions MDOptionSourcePos = CMARK_OPT_SOURCEPOS;
@@ -44,6 +46,9 @@ const MDNodeType MDNodeTypeParagraph = CMARK_NODE_PARAGRAPH;
 const MDNodeType MDNodeTypeHeading = CMARK_NODE_HEADING;
 const MDNodeType MDNodeTypeThematicBreak = CMARK_NODE_THEMATIC_BREAK;
 const MDNodeType MDNodeTypeFootnoteDefinition = CMARK_NODE_FOOTNOTE_DEFINITION;
+const MDNodeType MDNodeTypeTable = CMARK_NODE_TABLE;
+const MDNodeType MDNodeTypeTableRow = CMARK_NODE_TABLE_ROW;
+const MDNodeType MDNodeTypeTableCell = CMARK_NODE_TABLE_CELL;
 
 /* Inline */
 const MDNodeType MDNodeTypeText = CMARK_NODE_TEXT;
@@ -57,6 +62,7 @@ const MDNodeType MDNodeTypeStrong = CMARK_NODE_STRONG;
 const MDNodeType MDNodeTypeLink = CMARK_NODE_LINK;
 const MDNodeType MDNodeTypeImage = CMARK_NODE_IMAGE;
 const MDNodeType MDNodeTypeFootnoteReference = CMARK_NODE_FOOTNOTE_REFERENCE;
+const MDNodeType MDNodeTypeStrikethrough = CMARK_NODE_STRIKETHROUGH;
 
 const MDNodeListType MDNodeBulletList = CMARK_BULLET_LIST;
 const MDNodeListType MDNodeOrderedList = CMARK_ORDERED_LIST;

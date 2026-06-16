@@ -21,8 +21,7 @@
 #import <Markdium/MarkdiumTypes.h>
 #import <Markdium/MDNode.h>
 
-extern cmark_node_type CMARK_NODE_TABLE, CMARK_NODE_TABLE_ROW,
-    CMARK_NODE_TABLE_CELL;
+extern cmark_node_type CMARK_NODE_STRIKETHROUGH, CMARK_NODE_TABLE, CMARK_NODE_TABLE_ROW, CMARK_NODE_TABLE_CELL;
 
 @interface Markdium : NSObject
 

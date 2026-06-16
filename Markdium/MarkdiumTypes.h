@@ -115,6 +115,9 @@ extern const MDNodeType MDNodeTypeParagraph;
 extern const MDNodeType MDNodeTypeHeading;
 extern const MDNodeType MDNodeTypeThematicBreak;
 extern const MDNodeType MDNodeTypeFootnoteDefinition;
+extern const MDNodeType MDNodeTypeTable;
+extern const MDNodeType MDNodeTypeTableRow;
+extern const MDNodeType MDNodeTypeTableCell;
 
 /* Inline */
 extern const MDNodeType MDNodeTypeText;
@@ -128,6 +131,7 @@ extern const MDNodeType MDNodeTypeStrong;
 extern const MDNodeType MDNodeTypeLink;
 extern const MDNodeType MDNodeTypeImage;
 extern const MDNodeType MDNodeTypeFootnoteReference;
+extern const MDNodeType MDNodeTypeStrikethrough;
 
 typedef NSInteger MDNodeListType;
 
